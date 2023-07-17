@@ -115,8 +115,6 @@ jobs:
         continue-on-error: false
         env:
           TEST_DEFINITION_FILE: ${{ matrix.testDefinitionFile }}
-        outputs:
-          matrix: ${{ steps.add-newrelic-cli-path-smoke-tests.outputs.result }}
         with:
           script: |
             const fs = require('fs');
